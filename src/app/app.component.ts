@@ -53,7 +53,7 @@ const NAMES: string[] = [
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent  {
-  displayedColumns: string[] = ['id', 'name', 'progress', 'fruit'];
+  displayedColumns: string[] = ['Amount', 'Business', 'Credit Card', 'Datetime'];
   dataSource: MatTableDataSource<UserData>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
