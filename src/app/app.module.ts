@@ -11,11 +11,13 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DemoMaterialModule } from './material-module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MonthlyHoursComponent
+    MonthlyHoursComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
