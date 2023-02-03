@@ -1,4 +1,76 @@
 <div class="main-container">
-    <p>monthly-hours works!</p>
+    <div class="montly-form">
+        <mat-card>
+            <mat-card-content>
+                <form action="">
+                    <h2>Working Hours Tracker</h2>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Choose a date</mat-label>
+                        <input (click)="picker.open()" matInput [matDatepicker]="picker">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Hours</mat-label>
+                        <input matInput type="number">
+                    </mat-form-field>
+
+                    
+                    <div class="form-btn">
+                        <button mat-raised-button color="primary">Add To List</button>
+                    </div>
+                </form>
+            </mat-card-content>
+          </mat-card>
+    </div>
+    <div class="add-list">
+        <mat-card>
+            <mat-card-content>
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="35%">DATE</th>
+                            <th width="35%">NAME</th>
+                            <th width="20%">HOURS</th>
+                            <th width="10%">&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/01/2023</td>
+                            <td>Zain Zai</td>
+                            <td>00:00</td>
+                            <td><mat-icon>delete</mat-icon></td>
+                        </tr>
+                        <tr>
+                            <td>01/01/2023</td>
+                            <td>Zain Zai</td>
+                            <td>00:00</td>
+                            <td><mat-icon>delete</mat-icon></td>
+                        </tr>
+                        <tr>
+                            <td>01/01/2023</td>
+                            <td>Zain Zai</td>
+                            <td>00:00</td>
+                            <td><mat-icon>delete</mat-icon></td>
+                        </tr>
+                        <tr>
+                            <td>01/01/2023</td>
+                            <td>Zain Zai</td>
+                            <td>00:00</td>
+                            <td><mat-icon>delete</mat-icon></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="form-btn">
+        <button mat-raised-button color="primary">Submit List</button>
+    </div>
 </div>
 
