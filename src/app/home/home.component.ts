@@ -47,6 +47,19 @@ const NAMES: string[] = [
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  toggleButton: any = [];
+  toggleButtonCompany: any = [];
+  toggleButtonEmployer: any = [];
+
+  SelectCheck(index: number){
+    this.toggleButton[index] = !this.toggleButton[index];
+  }
+  SelectCheckCompany(index: number){
+    this.toggleButtonCompany[index] = !this.toggleButtonCompany[index];
+  }
+  SelectCheckEmployer(index: number){
+    this.toggleButtonEmployer[index] = !this.toggleButtonEmployer[index];
+  }
   displayedColumns: string[] = ['amount', 'business', 'credit_card', 'datetime', 'private', 'company', 'employer', 'description'];
   dataSource: MatTableDataSource<UserData>;
 
